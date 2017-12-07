@@ -9,10 +9,18 @@ public class PlayerInterA : MonoBehaviour {
 	public InteractionObjects currentInterObjScript = null;
 	public Inventory1 inventory;
 
+	BoxCollider2D m_ObjectCollider;
+
+	void Start()
+	{
+		m_ObjectCollider = GetComponent<BoxCollider2D> ();
+	}
+
 	//when item in range and e button pressed
 	void Update()
 	{
 		if(Input.GetButtonDown("Interact") && currentInterObj) {
+			
 			//Check to see if this item is to be added in inventory
 			if (currentInterObjScript.inventory) {
 				//sends it to inventory script and add to inventory
@@ -21,6 +29,7 @@ public class PlayerInterA : MonoBehaviour {
 
 			//check to see if this object can be opened
 			if (currentInterObjScript.openable) {
+				
 
 				//check to see if object is locked
 				if (currentInterObjScript.locked) {
@@ -30,9 +39,11 @@ public class PlayerInterA : MonoBehaviour {
 					if (inventory.FindItem (currentInterObjScript.itemNeeded)) {
 						//we found the item needed
 						currentInterObjScript.locked = false;
+
 						currentInterObjScript.changeScene = true;
 						Debug.Log (currentInterObj.name + "Was unlocked");
 						currentInterObjScript.ChangeSCene();
+						m_ObjectCollider.isTrigger = true;
 					} else {
 						Debug.Log (currentInterObj.name + "was not unlocked");
 					}	
@@ -42,6 +53,10 @@ public class PlayerInterA : MonoBehaviour {
 					//this.GetComponent<BoxCollider2D>().enabled = false; 
 					//call open door animator method
 					//currentInterObjScript.Open ();
+
+
+
+
 				}
 			}
 
@@ -57,7 +72,6 @@ public class PlayerInterA : MonoBehaviour {
 			GameObject potion = inventory.FindItemByType ("Health Potion");
 			if(potion != null){
 				//use the potion- apply effect
-			
 				//remove the potion from inventory
 				inventory.RemoveItem(potion);
 

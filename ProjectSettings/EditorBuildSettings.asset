@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/CabStart.unity
     guid: a9f93c3614ecbd842af6595a43ba1da0
   - enabled: 1
-    path: Assets/Scenes/CabStart 1.unity
+    path: Assets/Scenes/Cab1.unity
     guid: 3f23d550f5fcee5469d4c1f5e87d211f
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
@@ -20,3 +20,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/QuitGame.unity
     guid: 7da8aaccced92ba42b23aa285bbe8f07
+  - enabled: 1
+    path: Assets/Scenes/Info.unity
+    guid: 06c836cb7d78380458c98b4e76bcf2c7

@@ -1,16 +1,25 @@
-﻿<Properties StartupItem="Assembly-CSharp.csproj">
+﻿<Properties StartupItem="Assembly-CSharp.csproj" RefactoringSettings.EnableRefactorings="True">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\InteractionObjects.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerInterA.cs">
     <Files>
       <File FileName="Assets\Scripts\BulletScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\PlayerInterA.cs" Line="24" Column="5" />
-      <File FileName="Assets\Scripts\Inventory1.cs" Line="11" Column="1" />
-      <File FileName="Assets\Scripts\InteractionObjects.cs" Line="26" Column="50" />
+      <File FileName="Assets\Scripts\PlayerInterA.cs" Line="13" Column="2" />
+      <File FileName="Assets\Scripts\Inventory1.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\InteractionObjects.cs" Line="54" Column="25" />
       <File FileName="Assets\Scripts\Zombie.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Walk.cs" Line="34" Column="2" />
+      <File FileName="Assets\Scripts\Walk.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\TestZombie.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\last\Test1.cs" Line="14" Column="3" />
-      <File FileName="Assets\Scripts\last\LevelSwitch.cs" Line="24" Column="1" />
+      <File FileName="Assets\Scripts\last\Test1.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\last\LevelSwitch.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ButtonController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\TextController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\InfoPanel.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GameItem.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\CameraMovement.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\MoveAnimation.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Player.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\TextQuestion.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ZombieScript.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

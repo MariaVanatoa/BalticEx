@@ -11,14 +11,13 @@ public class Walk : MonoBehaviour
 	public GameObject bullet;
 	public float bulletForce;
 	public float health;
+	public ButtonController playButton;
 
 	public Text healthText;
 	//connection to panel and message text
 	public GameObject menuPanel;
 	//change the menu panel text
 	public Text messageText;
-
-
 
 	void Start () {
 		//display the health text
@@ -35,7 +34,7 @@ public class Walk : MonoBehaviour
 	// Use this for initialization
 
 	void Update (){
-	
+		
 		//horizontal movement (from input manager and find axis and return value)
 		float horizontal = Input.GetAxisRaw("Horizontal");
 		float vertical = Input.GetAxisRaw("Vertical");
@@ -67,6 +66,8 @@ public class Walk : MonoBehaviour
 			GameObject newBullet = Instantiate (bullet, transform.position, Quaternion.Euler(0, 0, -90));
 			newBullet.GetComponent<Rigidbody2D>().AddRelativeForce (new Vector2(bulletForce,0f));
 		}
+
+
 	}
 	/// <summary>
 	/// Takes the damage.
@@ -103,5 +104,10 @@ public class Walk : MonoBehaviour
 		//dosent work in editor, only in the real game
 		Application.Quit ();
 		Debug.Log ("Quit Button has been Pressed");
+	}
+
+	public void NextScene()
+	{
+		SceneManager.LoadScene ("CabMap");
 	}
 }
